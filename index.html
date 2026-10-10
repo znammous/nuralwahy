@@ -135,6 +135,20 @@ h2{font-size:clamp(26px,4.2vw,38px);color:#fff}
 .step .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;
   background:var(--gold);color:#0a1f45;font-weight:700;font-size:14px;margin-bottom:6px}
 
+/* الشهادات: شهادةُ السورة أمام شهادة الختم، كورقتين على الطاولة */
+.certs{position:relative;width:100%;max-width:480px;height:620px;margin:0 auto}
+.certs img{position:absolute;height:auto;border-radius:14px;box-shadow:0 22px 44px -14px #000c}
+.certs .cq{width:53%;top:0;right:4%;transform:rotate(5deg)}
+.certs .cs{width:61%;top:110px;left:2%;transform:rotate(-4deg)}
+/* المصادر والشكر */
+.thanks{margin:64px auto 0;max-width:960px;text-align:center}
+.thanks h3{font-size:24px;color:#fff}
+.thanks p{color:var(--gold);margin:6px 0 22px;font-size:16px}
+.thanks ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:start}
+.thanks li{background:var(--pnl);border:1.5px solid var(--pb);border-radius:16px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:start}
+.thanks li i{font-style:normal;font-size:20px;grid-row:span 2}
+.thanks li b{font-size:15px;color:#fff;line-height:1.5}
+.thanks li span{font-size:13px;color:var(--on2);line-height:1.6;overflow-wrap:anywhere}
 /* القصص */
 .tales{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;max-width:480px}
 .tales img{width:100%;height:auto;aspect-ratio:1;border-radius:18px;border:3px solid #ffffff22;object-fit:cover}
@@ -187,9 +201,12 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
   .row.flip .txt{order:0}
   .row + .row{margin-top:64px}
   .row .phone{max-width:230px}
+  .certs{max-width:340px;height:420px}
+  .certs .cs{top:74px}
   .steps{grid-template-columns:1fr 1fr;gap:12px}
   .step{padding:12px}
   .trust{grid-template-columns:1fr 1fr;gap:12px}
+  .thanks ul{grid-template-columns:1fr 1fr}
 }
 @media (max-width:520px){
   .wrap{padding:0 16px}
@@ -200,6 +217,7 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
   .tales{display:flex;overflow-x:auto;max-width:none;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}
   .tales img{width:120px;flex:none}
   .trust div{padding:16px 10px}
+  .thanks ul{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -298,6 +316,18 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
   <div class="wrap">
     <div class="row flip">
       <div class="txt">
+        <div class="kick" data-t="ct_k">فرحةُ الإنجاز</div>
+        <h2 data-t="ct_h">شهادةٌ مع كلّ سورة</h2>
+        <p class="lead" data-t="ct_lead">كلّما أتمّ سورةً نال شهادةً باسمه وصورته يشاركها أهلَه صورةً أو يطبعها، ثمّ شهادةٌ لكلّ جزء، وفي الختام شهادةُ ختم القرآن الكريم بتاجها.</p>
+      </div>
+      <div class="certs">
+        <img class="cq" src="img/cert-quran.webp" data-shot="cert-quran" alt="" loading="lazy" width="560" height="1159">
+        <img class="cs" src="img/cert-sura.webp" data-shot="cert-sura" alt="" loading="lazy" width="560" height="900">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="txt">
         <div class="kick" data-t="fam_k">للبيت كلّه</div>
         <h2 data-t="fam_h">يتنافسون في الخير</h2>
         <ul class="feats">
@@ -333,6 +363,20 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
       <div><i>🔒</i><b data-t="t2b">لا يجمع بيانات</b><p data-t="t2p">تقدّمك في جهازك وحده</p></div>
       <div><i>🎙️</i><b data-t="t3b">صوتك لك</b><p data-t="t3p">التسجيل يُسمع ثمّ يُمحى</p></div>
       <div><i>📴</i><b data-t="t4b">دون إنترنت</b><p data-t="t4p">يعمل في أيّ مكان</p></div>
+    </div>
+    <div class="thanks">
+      <h3 data-t="th_h">المصادر والشكر</h3>
+      <p data-t="th_in">جزى اللهُ خيراً كلَّ من أتاح هذه المصادر خدمةً لكتابه</p>
+      <ul>
+        <li><i>📖</i><b data-t="th1">نصّ المصحف</b><span data-t="th1o">quran.com (مصحف المدينة)، ومطابَقٌ آيةً بآية مع alquran.cloud</span></li>
+        <li><i>🖋️</i><b data-t="th2">خطوط المصحف وصفحاته</b><span data-t="th2o">مجمع الملك فهد لطباعة المصحف الشريف، عبر quran.com</span></li>
+        <li><i>💡</i><b data-t="th3">التفسير الميسّر والميسّر في غريب القرآن الكريم</b><span data-t="th3o">مجمع الملك فهد لطباعة المصحف الشريف</span></li>
+        <li><i>🌍</i><b data-t="th4">ترجمات معاني القرآن</b><span data-t="th4o">موسوعة القرآن الكريم QuranEnc.com ومركز رواد للترجمة، ومصدرُ كلّ ترجمةٍ مذكورٌ معها</span></li>
+        <li><i>🎧</i><b data-t="th5">التلاوات</b><span data-t="th5o">everyayah.com · mp3quran.net</span></li>
+        <li><i>🗓️</i><b data-t="th6">خطط الحفظ</b><span data-t="th6o">برنامج «بالقرآن نحيا»، Quranlives.com</span></li>
+        <li><i>🧩</i><b data-t="th7">نوعُ كلّ كلمةٍ في القرآن</b><span data-t="th7o">Quranic Arabic Corpus (corpus.quran.com) · github.com/mustafa0x/quran-morphology</span></li>
+        <li><i>🔤</i><b data-t="th8">خطوط الواجهة</b><span data-t="th8o">IBM Plex Sans Arabic · Amiri Quran · Nunito · Noto Nastaliq Urdu</span></li>
+      </ul>
     </div>
   </div>
 </section>
