@@ -135,13 +135,9 @@ h2{font-size:clamp(26px,4.2vw,38px);color:#fff}
 .step .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;
   background:var(--gold);color:#0a1f45;font-weight:700;font-size:14px;margin-bottom:6px}
 
-.games{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:56px 0 0}
-.games figure{margin:0;text-align:center}
-.games img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:22px;border:3px solid #ffffff22;box-shadow:0 18px 40px -16px #000a}
-.games figcaption{font-size:17px;font-weight:700;color:#fff;margin-top:10px}
 /* القصص */
 .tales{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;max-width:480px}
-.tales img{width:100%;aspect-ratio:1;border-radius:18px;border:3px solid #ffffff22;object-fit:cover}
+.tales img{width:100%;height:auto;aspect-ratio:1;border-radius:18px;border:3px solid #ffffff22;object-fit:cover}
 
 /* اللغات */
 .langs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:30px auto 0;max-width:820px;padding:0;list-style:none}
@@ -201,8 +197,6 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
   .lpick{max-width:140px}
   .store{flex:1 1 100%;justify-content:center}
   .step .phone{max-width:150px}
-  .games{display:flex;overflow-x:auto;margin:40px -16px 0;padding:0 16px 8px;gap:14px;scrollbar-width:none}
-  .games figure{flex:none;width:230px}
   .tales{display:flex;overflow-x:auto;max-width:none;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}
   .tales img{width:120px;flex:none}
   .trust div{padding:16px 10px}
@@ -262,7 +256,7 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
 
 <section class="sky">
   <div class="wrap">
-    <div class="row">
+    <div class="row flip">
       <div class="txt">
         <div class="kick" data-t="adv_k">مغامرةٌ لا حصّة</div>
         <h2 data-t="adv_h">كلُّ آيةٍ تحفظها تبني شيئاً</h2>
@@ -272,16 +266,16 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
           <li><i>🎮</i><span data-t="f3">ركن المغامرة: ألعابٌ من آياتك تكافئك على ما حفظت</span></li>
           <li><i>💎</i><span data-t="f4">جواهر وشارات، وشهادة إتمامٍ تشاركها أهلك</span></li>
         </ul>
+        <div class="tales games">
+          <img src="img/g-runner.webp" alt="" loading="lazy" width="400" height="400">
+          <img src="img/g-shelf.webp" alt="" loading="lazy" width="400" height="400">
+          <img src="img/g-bird.webp" alt="" loading="lazy" width="400" height="400">
+        </div>
       </div>
-      <div class="phone"><img src="img/6-build.webp" data-shot="6-build" alt="" loading="lazy" width="540" height="1169"></div>
-    </div>
-    <div class="games">
-      <figure><img src="img/g-runner.webp" data-gshot="runner" alt="" loading="lazy" width="540" height="723"><figcaption data-t="gm_runner">عدّاء الآيات</figcaption></figure>
-      <figure><img src="img/g-shelf.webp" data-gshot="shelf" alt="" loading="lazy" width="540" height="723"><figcaption data-t="gm_shelf">رفّ الآيات</figcaption></figure>
-      <figure><img src="img/g-bird.webp" data-gshot="bird" alt="" loading="lazy" width="540" height="723"><figcaption data-t="gm_bird">عصفور الآيات</figcaption></figure>
+      <div class="phone"><img src="img/2-games.webp" data-shot="2-games" alt="" loading="lazy" width="540" height="1169"></div>
     </div>
 
-    <div class="row flip">
+    <div class="row">
       <div class="txt">
         <div class="kick" data-t="st_k">قصصٌ مصوّرة</div>
         <h2 data-t="st_h">حكاياتٌ تُفتح لك في الطريق</h2>
@@ -295,14 +289,14 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
           <img src="img/s-asir.webp" alt="" loading="lazy" width="200" height="200">
         </div>
       </div>
-      <div class="phone"><img src="img/2-games.webp" data-shot="2-games" alt="" loading="lazy" width="540" height="1169"></div>
+      <div class="phone"><img src="img/st-list.webp" data-shot="st-list" alt="" loading="lazy" width="540" height="1169"></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="row">
+    <div class="row flip">
       <div class="txt">
         <div class="kick" data-t="fam_k">للبيت كلّه</div>
         <h2 data-t="fam_h">يتنافسون في الخير</h2>
@@ -391,8 +385,7 @@ if(D){
   document.title = D.title || document.title;
   if(D.desc) document.querySelector('meta[name=description]').content = D.desc;
   /* لقطاتُ التطبيق بلغته */
-  document.querySelectorAll('[data-shot]').forEach(function(img){ img.src='img/'+LANG+'/'+img.getAttribute('data-shot')+'.webp'; });
-  document.querySelectorAll('[data-gshot]').forEach(function(img){ var ar=img.src; img.onerror=function(){ img.onerror=null; img.src=ar; }; img.src='img/'+LANG+'/g-'+img.getAttribute('data-gshot')+'.webp'; });   /* لغةٌ لم تُلتقط ألعابُها بعد: العربيّة */
+  document.querySelectorAll('[data-shot]').forEach(function(img){ var ar=img.src; img.onerror=function(){ img.onerror=null; img.src=ar; }; img.src='img/'+LANG+'/'+img.getAttribute('data-shot')+'.webp'; });   /* لقطةٌ لم تُلتقط بلغته بعد: العربيّة */
   if(D.mean){ var m=document.querySelector('[data-mean]'); m.textContent=D.mean; m.hidden=false; }
   var DIG = RTL[LANG] ? '۰۱۲۳۴۵۶۷۸۹' : '0123456789';
   document.querySelectorAll('.step .n').forEach(function(n,i){ n.textContent=DIG[i+1]; });
