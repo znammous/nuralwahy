@@ -2,6 +2,8 @@
    mean: ترجمةُ معنى آية الخاتمة (القمر ١٧) من data/tr — والماليزيّة بلا ترجمةٍ معتمدة فلا سطرَ لها */
 var L10N = {
  en: {
+   "apk_q": "No Google Play on your device?",
+   "apk_a": "Download the APK",
    "title": "Nur Al-Wahy — memorizing the Quran is a fun journey",
    "desc": "Nur Al-Wahy: a free app to memorize and review the Quran on the Mushaf page, in a journey with games, stories and a mosque you build ayah by ayah. No ads, no accounts, works offline, in 14 languages.",
    "name": "Nur Al-Wahy",
@@ -63,6 +65,8 @@ var L10N = {
    "mean": "We have certainly made the Qur’an easy to understand and remember; is there anyone to take heed?"
   },
  ur: {
+   "apk_q": "آپ کے آلے پر Google Play نہیں ہے؟",
+   "apk_a": "APK فائل ڈاؤن لوڈ کریں",
    "title": "نور الوحي — حفظِ قرآن ایک پُرلطف سفر",
    "desc": "«نور الوحي»: مصحف کے اصل صفحے پر قرآن حفظ کرنے اور دہرانے کی مفت ایپ، ایک ایسے سفر میں جس میں کھیل ہیں، کہانیاں ہیں اور ایک مسجد ہے جو آپ آیت بہ آیت بناتے ہیں۔ نہ اشتہار، نہ اکاؤنٹ، انٹرنیٹ کے بغیر بھی چلتی ہے، ۱۴ زبانوں میں۔",
    "name": "نور الوحي",
@@ -124,6 +128,8 @@ var L10N = {
    "mean": "اور بیشک ہم نے قرآن کو سمجھنے کے لیے آسان کر دیا ہے ۔ پس کیا کوئی نصیحت حاصل کرنے والا ہے؟"
   },
  fa: {
+   "apk_q": "Google Play روی دستگاه شما نیست؟",
+   "apk_a": "فایل APK را دانلود کنید",
    "title": "نور الوحي — حفظ قرآن، سفری شیرین",
    "desc": "«نور الوحي»: اپلیکیشن رایگان برای حفظ و تکرار قرآن روی صفحهٔ مصحف، در سفری پر از بازی و قصه و مسجدی که آیه به آیه می‌سازی. بدون اعلان و بدون حساب، بدون انترنت هم کار می‌کند، به ۱۴ زبان.",
    "name": "نور الوحي",
@@ -185,6 +191,8 @@ var L10N = {
    "mean": "به راستی که قرآن را براى پند گرفتن آسان ساختیم؛ آیا پندپذیرى هست؟"
   },
  ps: {
+   "apk_q": "ستاسو په وسیله Google Play نشته؟",
+   "apk_a": "د APK فایل ډاونلوډ کړئ",
    "title": "نور الوحي — د قرآن حفظ، یو خوندور سفر",
    "desc": "«نور الوحي»: د مصحف پر مخ د قرآن د حفظ او تکرار وړیا اپلیکیشن، په داسې سفر کې چې لوبې، کیسې او یو جومات لري چې آیت په آیت یې جوړوئ. نه اعلانونه، نه حسابونه، بې انټرنېټه هم کار کوي، په ۱۴ ژبو.",
    "name": "نور الوحي",
@@ -246,6 +254,8 @@ var L10N = {
    "mean": "او بېشكه موږ قرآن د پوهېدلو (تلاوت) لپاره آسان كړى نو آيا څوک نصيحت اخيستونكى شته؟"
   },
  tr: {
+   "apk_q": "Cihazınızda Google Play yok mu?",
+   "apk_a": "APK dosyasını indirin",
    "title": "Nur Al-Wahy — Kur'an ezberlemek keyifli bir yolculuk",
    "desc": "Nur Al-Wahy: Kur'an'ı Mushaf sayfası üzerinde ezberlemek ve tekrar etmek için ücretsiz bir uygulama; oyunlar, hikâyeler ve ayet ayet inşa ettiğin bir caminin olduğu bir yolculuk. Reklam yok, hesap yok, internetsiz çalışır, 14 dilde.",
    "name": "Nur Al-Wahy",
@@ -307,6 +317,8 @@ var L10N = {
    "mean": "Andolsun ki, Kur'an'ı öğüt alınması için kolaylaştırdık. Fakat öğüt alan var mı?"
   },
  fr: {
+   "apk_q": "Pas de Google Play sur votre appareil ?",
+   "apk_a": "Télécharger l’APK",
    "title": "Nur Al-Wahy — apprendre le Coran par cœur, un voyage joyeux",
    "desc": "Nur Al-Wahy : une application gratuite pour apprendre et réviser le Coran sur la page du Mushaf, dans un voyage plein de jeux, d'histoires et d'une mosquée que l'on construit verset après verset. Sans publicité ni compte, hors ligne, en 14 langues.",
    "name": "Nur Al-Wahy",
@@ -368,6 +380,8 @@ var L10N = {
    "mean": "Nous avons rendu le Coran aisé à comprendre. Y a-t-il quelqu’un pour en méditer les enseignements?"
   },
  id: {
+   "apk_q": "Tidak ada Google Play di perangkat Anda?",
+   "apk_a": "Unduh file APK",
    "title": "Nur Al-Wahy — menghafal Al-Qur'an jadi perjalanan seru",
    "desc": "Nur Al-Wahy: aplikasi gratis untuk menghafal dan murajaah Al-Qur'an di halaman Mushaf, dalam perjalanan penuh permainan, cerita, dan masjid yang kamu bangun ayat demi ayat. Tanpa iklan, tanpa akun, bisa tanpa internet, dalam 14 bahasa.",
    "name": "Nur Al-Wahy",
@@ -429,6 +443,8 @@ var L10N = {
    "mean": "Dan sesungguhnya telah Kami mudahkan Al-Qur`ān untuk pelajaran, maka adakah orang yang mengambil pelajaran?"
   },
  ms: {
+   "apk_q": "Tiada Google Play pada peranti anda?",
+   "apk_a": "Muat turun fail APK",
    "title": "Nur Al-Wahy — menghafaz al-Quran, satu perjalanan yang seronok",
    "desc": "Nur Al-Wahy: aplikasi percuma untuk menghafaz dan mengulang kaji al-Quran pada halaman Mushaf, dalam perjalanan penuh permainan, cerita dan masjid yang kamu bina ayat demi ayat. Tiada iklan, tiada akaun, boleh digunakan tanpa internet, dalam 14 bahasa.",
    "name": "Nur Al-Wahy",
@@ -489,6 +505,8 @@ var L10N = {
    "webv": "Versi web"
   },
  bn: {
+   "apk_q": "আপনার ডিভাইসে Google Play নেই?",
+   "apk_a": "APK ফাইল ডাউনলোড করুন",
    "title": "Nur Al-Wahy — কুরআন হিফজ এক আনন্দময় যাত্রা",
    "desc": "Nur Al-Wahy: মুসহাফের পৃষ্ঠায় কুরআন হিফজ ও পুনরাবৃত্তির বিনামূল্যের অ্যাপ — খেলা, গল্প আর আয়াতে আয়াতে গড়ে ওঠা নিজের মসজিদসহ এক যাত্রা। বিজ্ঞাপন নেই, অ্যাকাউন্ট লাগে না, ইন্টারনেট ছাড়াও চলে, ১৪টি ভাষায়।",
    "name": "Nur Al-Wahy",
@@ -550,6 +568,8 @@ var L10N = {
    "mean": "আর অবশ্যই আমি উপদেশ গ্রহণের জন্য আল-কুরআনকে সহজ করে দিয়েছি। অতএব (এর থেকে) কোন উপদেশ গ্রহণকারী আছে কি?"
   },
  sw: {
+   "apk_q": "Huna Google Play kwenye kifaa chako?",
+   "apk_a": "Pakua faili la APK",
    "title": "Nur Al-Wahy — kuhifadhi Qurani ni safari ya kufurahisha",
    "desc": "Nur Al-Wahy: programu ya bure ya kuhifadhi na kurudia Qurani kwenye ukurasa wa Msahafu, katika safari yenye michezo, hadithi na msikiti unaoujenga aya baada ya aya. Bila matangazo wala akaunti, inafanya kazi bila intaneti, kwa lugha 14.",
    "name": "Nur Al-Wahy",
@@ -611,6 +631,8 @@ var L10N = {
    "mean": "Na bila ya shaka Sisi tumeifanya Qur-ani iwe nyepesi kufahamika. Lakini yupo anayekumbuka?"
   },
  ha: {
+   "apk_q": "Babu Google Play a wayarka?",
+   "apk_a": "Sauke fayil ɗin APK",
    "title": "Nur Al-Wahy — haddar Alƙur’ani tafiya ce mai daɗi",
    "desc": "Nur Al-Wahy: manhaja ce kyauta don haddace Alƙur’ani da yin bita a kan shafin Mushafi, a cikin tafiya mai wasanni, labarai da masallacin da kake ginawa aya bayan aya. Babu talla, babu asusu, tana aiki ba tare da intanet ba, a cikin harsuna 14.",
    "name": "Nur Al-Wahy",
@@ -672,6 +694,8 @@ var L10N = {
    "mean": "Kuma lalle ne, haƙĩkƙa, Mun sauƙaƙe Alƙur'ãni, dõmin tunãwa. To, shin, akwai mai tunãwa?"
   },
  so: {
+   "apk_q": "Google Play kuma jiro qalabkaaga?",
+   "apk_a": "Soo deji faylka APK",
    "title": "Nur Al-Wahy — xifdiga Qur’aanku waa safar xiiso leh",
    "desc": "Nur Al-Wahy: app bilaash ah oo lagu xifdiyo laguna muraajaceeyo Qur’aanka bogga Mushafka, safar ay ku jiraan ciyaaro, sheekooyin iyo masjid aad dhisayso aayad aayad. Xayaysiis iyo akoon la’aan, internet la’aan ayuu ku shaqeeyaa, 14 luqadood.",
    "name": "Nur Al-Wahy",
@@ -733,6 +757,8 @@ var L10N = {
    "mean": "Waxaanu dhabtii sahalnay Qur’aanka si loo xusuusto, mase jiraa cid waantoobi?"
   },
  uz: {
+   "apk_q": "Qurilmangda Google Play yoʻqmi?",
+   "apk_a": "APK faylni yuklab ol",
    "title": "Nur Al-Wahy — Qurʼon yodlash qiziqarli sayohat",
    "desc": "Nur Al-Wahy: Qurʼonni Mushaf sahifasida yodlash va takrorlash uchun bepul ilova — oʻyinlar, hikoyalar va oyatma-oyat quriladigan masjid bilan sayohat. Reklamasiz, hisobsiz, internetsiz ishlaydi, 14 tilda.",
    "name": "Nur Al-Wahy",
