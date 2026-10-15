@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>نور الوحي — حفظ القرآن رحلةٌ ممتعة</title>
-<meta name="description" content="«نور الوحي»: تطبيقٌ مجّانيّ لحفظ القرآن ومراجعته على وجه المصحف، في رحلةٍ فيها ألعابٌ وقصصٌ ومسجدٌ تبنيه آيةً بعد آية. بلا إعلانات ولا حسابات، ويعمل دون إنترنت، بأربع عشرة لغة.">
+<meta name="description" content="«نور الوحي»: تطبيقٌ مجّانيّ لحفظ القرآن ومراجعته على وجه المصحف، في رحلةٍ فيها ألعابٌ وقصصٌ ومسجدٌ تبنيه آيةً بعد آية. بلا إعلانات ولا حسابات، ويعمل دون إنترنت، بخمس عشرة لغة.">
 <meta name="theme-color" content="#04173a">
 <link rel="icon" href="img/icon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -21,7 +21,7 @@
 <script>
 /* اللغة: ?lang= ثمّ ما اختاره الزائرُ من قبل ثمّ لغةُ جهازه، وإلّا فالعربيّة.
    غيرُ العربيّة تُخفى الصفحةُ حتى تُترجم فلا تومض عربيّتُها */
-var LANGS={ar:'العربيّة',en:'English',ur:'اردو',fa:'فارسی',ps:'پښتو',tr:'Türkçe',fr:'Français',id:'Bahasa Indonesia',ms:'Bahasa Melayu',bn:'বাংলা',sw:'Kiswahili',ha:'Hausa',so:'Soomaali',uz:'O‘zbekcha'};
+var LANGS={ar:'العربيّة',en:'English',ur:'اردو',fa:'فارسی',ps:'پښتو',tr:'Türkçe',fr:'Français',id:'Bahasa Indonesia',ms:'Bahasa Melayu',bn:'বাংলা',sw:'Kiswahili',ha:'Hausa',so:'Soomaali',uz:'O‘zbekcha',ru:'Русский'};
 var RTL={ar:1,ur:1,fa:1,ps:1};
 var LANG=(function(){
   var q=(location.search.match(/[?&]lang=([a-z]{2})/)||[])[1]; if(q&&LANGS[q]) return q;
@@ -242,7 +242,7 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
           <li data-t="p1">مجّانيّ تماماً</li>
           <li data-t="p2">بلا إعلانات</li>
           <li data-t="p3">يعمل دون إنترنت</li>
-          <li data-t="p4">أربع عشرة لغة</li>
+          <li data-t="p4">خمس عشرة لغة</li>
         </ul>
       </div>
       <div class="phone"><img src="img/1-path.webp" data-shot="1-path" alt="" width="540" height="1169" fetchpriority="high"></div>
@@ -346,10 +346,10 @@ html:is([lang=tr],[lang=bn],[lang=ha],[lang=uz]) body{font-family:system-ui,-app
   <div class="wrap center">
     <div class="kick" data-t="lang_k">بلغتك ولغة أبنائك</div>
     <h2 data-t="lang_h">بلغات أكثر من مليار مسلم</h2>
-    <p class="lead" data-t="lang_lead">الواجهة والقصص بأربع عشرة لغة، ومعها ترجمةُ معاني الآيات المعتمدة في أكثرها. أمّا المصحفُ والآياتُ فبالعربيّة كما أُنزلت.</p>
+    <p class="lead" data-t="lang_lead">الواجهة والقصص بخمس عشرة لغة، ومعها ترجمةُ معاني الآيات المعتمدة في أكثرها. أمّا المصحفُ والآياتُ فبالعربيّة كما أُنزلت.</p>
     <ul class="langs">
       <li>العربيّة</li><li>English</li><li>اردو</li><li>فارسی</li><li>پښتو</li><li>Türkçe</li><li>Français</li>
-      <li>Bahasa Indonesia</li><li>Bahasa Melayu</li><li>বাংলা</li><li>Kiswahili</li><li>Hausa</li><li>Soomaali</li><li>O‘zbekcha</li>
+      <li>Bahasa Indonesia</li><li>Bahasa Melayu</li><li>বাংলা</li><li>Kiswahili</li><li>Hausa</li><li>Soomaali</li><li>O‘zbekcha</li><li>Русский</li>
     </ul>
   </div>
 </section>
